@@ -1,2 +1,2 @@
-# redux-app
+# Redux App
  
