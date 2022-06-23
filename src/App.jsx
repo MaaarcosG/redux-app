@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import './App.css'
 import logo from './logo.svg'
-import { increment, decrement } from './store/slices/counter';
+import { increment, decrement, incrementBy } from './store/slices/counter';
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
           <button type="button" onClick={() => dispatch(decrement())}>
             Decrement
           </button>
-          <button type="button" onClick={() => dispatch(increment())}>
+          <button type="button" onClick={() => dispatch(incrementBy(2))}>
             Increment by 2
           </button>
         </p>
